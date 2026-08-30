@@ -23,14 +23,27 @@ function addToDo() {
   console.log(todos);
 }
 
-addTaskBtn.addEventListener("click", addToDo);
-
 function displayToDo() {
   taskList.innerHTML = "";
   todos.forEach(function (todo) {
     const li = document.createElement("li");
     li.innerHTML = todo.text;
     taskList.appendChild(li);
+
+    li.addEventListener("dblclick", function () {
+      const editInput = document.createElement("input");
+      editInput.classList.add("edit-input");
+      console.log(editInput.outerHTML);
+      editInput.value = todo.text;
+      li.innerHTML = "";
+      li.appendChild(editInput);
+      editInput.focus();
+
+      editInput.addEventListener("blur", function () {
+        todo.text = editInput.value;
+        displayToDo();
+      });
+    });
   });
 }
 
