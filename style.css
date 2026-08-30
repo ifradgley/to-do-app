@@ -53,6 +53,7 @@
 }
 #to-do-app {
   display: flex;
+  flex-direction: column;
   padding: 50px;
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 20px;
@@ -60,13 +61,21 @@
 }
 
 #to-do-app input {
+  display: flex;
+  flex-direction: column;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.8);
+  width: auto;
+  height: 40px;
+  margin-bottom: 15px;
+  padding-left: 20px;
 }
 #to-do-app button {
+  display: flex;
+  flex-direction: column;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex: 1;
@@ -75,4 +84,7 @@
   backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.8);
+  width: auto;
+  height: 40px;
+  margin-bottom: 15px;
 }
