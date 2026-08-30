@@ -1,0 +1,78 @@
+/* Page background */
+.background {
+  background-color: rgb(170, 237, 185);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+#time-of-day {
+  display: flex;
+}
+
+#time-of-day input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+#time-of-day input:checked + label {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+}
+#time-of-day label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+#to-do-app {
+  display: flex;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+#to-do-app input {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+#to-do-app button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}

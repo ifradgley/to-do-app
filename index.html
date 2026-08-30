@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+
+    <!-- Link your external CSS file here: -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="background">
+    <div class="container">
+        <!-- All visible webpage content goes here -->
+        <div id="time-of-day">
+            <input type="radio" id="morning" name="time-of-day--background" value="morning" checked />
+            <label for="morning">Morning</label>
+            <input type="radio" id="afternoon" name="time-of-day--background" value="afternoon" />
+            <label for="afternoon">Afternoon</label>
+            <input type="radio" id="night" name="time-of-day--background" value="night" />
+            <label for="night">Night</label>
+
+        </div>
+        <div id="to-do-app">
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <button id="addTaskBtn">Add</button>
+            <ul id="taskList"></ul>
+        </div>
+        <script src="script.js"></script>
+
+</body>
+
+</html>
