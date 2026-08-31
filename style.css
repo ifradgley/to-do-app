@@ -20,6 +20,15 @@
 
 #time-of-day {
   display: flex;
+  #morning:checked + label {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  #afternoon:checked + label {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  #night:checked + label {
+    background-color: rgba(255, 255, 255, 1);
+  }
 }
 
 #time-of-day input {
@@ -51,11 +60,12 @@
   cursor: pointer;
   border-radius: 20px;
 }
+
 #to-do-app {
   display: flex;
   flex-direction: column;
   padding: 50px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   backdrop-filter: blur(10px);
 }
@@ -64,7 +74,7 @@
   display: flex;
   flex-direction: column;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.8);
@@ -80,7 +90,7 @@
   display: flex;
   flex: 1;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 1);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.8);

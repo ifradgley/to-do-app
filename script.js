@@ -2,6 +2,7 @@ let todos = [];
 const taskInput = document.getElementById("taskInput");
 const addTaskBtn = document.getElementById("addTaskBtn");
 const taskList = document.getElementById("taskList");
+let currentTimeOfDay = "morning";
 
 function addToDo() {
   const text = taskInput.value.trim();
@@ -15,6 +16,7 @@ function addToDo() {
     text: text,
     id: id,
     completed: completed,
+    timeOfDay: currentTimeOfDay,
   };
   todos.push(newToDo);
   displayToDo();
@@ -49,3 +51,13 @@ function displayToDo() {
 
 addTaskBtn.addEventListener("click", addToDo);
 displayToDo();
+
+const timeOptions = document.querySelectorAll(
+  'input[name="time-of-day--background"]',
+);
+
+timeOptions.forEach(function (radio) {
+  radio.addEventListener("change", function () {
+    currentTimeOfDay = this.value;
+  });
+});
